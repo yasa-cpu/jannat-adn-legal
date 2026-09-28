@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>TikTok OAuth callback — Jannat.adn</title></head>
+<body>
+<h1>Code d'autorisation TikTok</h1>
+<p>Copie le code ci-dessous et colle-le dans le script local :</p>
+<pre id="code" style="font-size:1.4em;background:#eee;padding:1em;word-break:break-all;"></pre>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById("code").textContent = params.get("code") || "(aucun code trouvé dans l'URL)";
+</script>
+</body></html>
